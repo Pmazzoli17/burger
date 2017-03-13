@@ -6,16 +6,12 @@ var burger = {
 		orm.all('burgers',function(res){
 			cb(res);
 		})
-     }
-  }
+     },
+
+    update: function(id,cb) {
+     	orm.update('burgers', id,cb);
+    }
+ }
 
   module.exports = burger;
 
- //  var burger = {
-	// all: function(tableInput, cb) {
-	// 	connection.query('SELECT * FROM '+tableInput+';', function(err, result){
-	// 		if(err) throw err;
-	// 		cb(result)
-	// 	})
- //     }
- //  }
