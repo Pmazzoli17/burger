@@ -16,5 +16,5 @@ connection.connect(function(err){
   console.log("connected as id: " + connection.threadId);
 });
 
-// Export connection
+// Export connection for the ORM to use 
 module.exports = connection;
