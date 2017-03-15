@@ -7,7 +7,8 @@ var exphbs = require('express-handlebars');
 // Sets up the Express App
 var app = express();
 
-var port = 3000;
+var port = process.env.PORT || 3000;
+// var port = 3000;
 
 app.use(express.static(__dirname + '/public'));
 
