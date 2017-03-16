@@ -16,11 +16,11 @@ if (process.env.JAWSDB_URL) {
 };
 
 // Connect to the database
-// connection.connect(function(err){
-//   if(err)throw err;
-//   console.log("connected as id: " + connection.threadId);
-// });
+connection.connect(function(err){
+  if(err)throw err;
+  console.log("connected as id: " + connection.threadId);
+});
 
 // Export connection for the ORM to use 
-connection.connect();
+// connection.connect();
 module.exports = connection;
